@@ -1,0 +1,580 @@
+@charset "utf-8";
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+  color: #141414;
+}
+
+p,div{
+  font-weight: 300;
+  color: #141414;
+}
+
+html{
+  font-size: 10px;
+}
+
+/*footer*/
+
+footer{
+  background-color: #303030;
+  margin: 80px 0 0 0;
+}
+
+.footer-primary{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 6.5%;
+  box-sizing: border-box;
+}
+
+.footer-left{
+  display: flex;
+  justify-content: space-between;
+  width: 73.7%;
+}
+
+.cop{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.address h4{
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.address tbody tr th,td{
+  color: #fff;
+  padding-bottom: 22px;
+  line-height: 2.7rem;
+  vertical-align: top;
+}
+
+.address tbody tr:last-child th,.address tbody tr:last-child td{
+  color: #fff;
+  padding-bottom: 0px;
+}
+
+
+.address th{
+  font-size: 18px;
+  padding-right: 22px
+}
+
+.address td{
+  font-size: 14px;
+}
+
+.map{
+  width: 43.61%;
+}
+
+.ft-nav li{
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.ft-nav li a{
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: right;
+}
+
+.ft-nav li a::after{
+  content: "";
+  display: inline-block;
+  background-color: #fff;
+  height: 1px;
+  width: 15px;
+  margin-left: 10px;
+  vertical-align: super;
+}
+
+
+/*btn*/
+
+.rm--btn{
+  display: block;
+  position: relative;
+  width: 134px;
+  margin: 0 auto;
+  line-height: 24px;
+  text-align: left;
+  border: 1px solid #141414;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.rm--btn span{
+  margin-left: 10px;
+}
+
+.rm--btn a{
+  display: block;
+  color: #141414;
+}
+
+.arrow{
+  content: "";
+  display: block;
+  position: absolute;
+  right: -18px;
+  top: 58.33%;
+  height: 1px;
+  width: 34px;
+  background-color: #141414;
+}
+
+.arrow::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: -1px;
+  bottom: 3px;
+  border-bottom: 1px solid #141414;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  width: 10px;
+  transform: rotate(30deg);
+}
+
+
+
+/*gnav始まり*/
+
+
+.g-nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.g-nav{
+  color: #fff;
+}
+
+.logo{
+  font-size:2.4rem;
+  color: #fff;
+}
+
+.g-nav li{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.g-nav li a{
+  display: block;
+  color: #fff;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.g-nav li.l-list a::after{
+  position: absolute;
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 10px;
+  width: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.g-nav li.l-list a:hover:after{
+  width: 100%;
+}
+
+/*gnav終わり*/
+
+
+/*home-base始まり*/
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+div[class^="content--area"]{
+  position: relative;
+  width: 50%;
+}
+
+.card{
+  position: relative;
+  max-width: 550px;
+  background-color: #fff;
+  margin: 3.5vw 10% 0 2.9vw;
+  padding: 10px 0 12.5px;
+}
+
+.card--head{
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 2.75vw;
+}
+
+.card--text{
+  font-size: 1.2rem;
+  line-height: 2.25em;
+  padding-right: 2%;
+  font-weight: 600;
+}
+
+/*home-base終わり*/
+
+
+
+
+/*home-header始まり*/
+
+header{
+  position: relative;
+  background-image: url(../image/home-top@2x.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home-hd{
+  margin-bottom: 80px;
+}
+
+/*----SNS始まり----*/
+
+.share-btn{
+  position: relative;
+  font-size: 1.9rem;
+  margin-right: 5px;
+}
+
+.share-btn .sns-list{
+  display: none;
+  position: absolute;
+  top: 31px;
+  left: -50%;
+  background-color: rgb(255,255,255,0.5);
+  border-top: 5px solid #3e6262;
+  width: 100px;
+  padding: 8px;
+}
+
+.share-btn:hover .sns-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.share-btn .sns-list::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: 5%;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #3e6262;
+  border-left: 10px solid transparent;
+}
+
+.share-btn .sns-list li{
+  margin: 0;
+}
+
+.share-btn .sns-list li a{
+  text-align: center;
+}
+
+.share-btn .sns-list li a img{
+  width: 25px;
+}
+
+/*----SNS終わり----*/
+
+
+/*----scroll-btn始まり----*/
+
+.bottom-scroll{
+  position: absolute;
+  bottom: 4vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.bottom-scroll .scroll-txt{
+  padding-top: 15px;
+  color: #fff;
+}
+
+.bottom-scroll .scroll-txt::after{
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: auto;
+}
+
+/*----scroll-btn終わり----*/
+
+/*home-header終わり*/
+
+
+/*-共通header始まり*/
+
+#puroduct header{
+  background-image: none;
+  height: auto;
+  width: auto;
+  margin-bottom: 0;
+}
+
+.home-hd{
+  margin-bottom: 80px;
+}
+
+#puroduct .g-nav{
+  background-color: #3e6262;
+}
+
+/*共通終わり*/
+
+/*----top-about始まり----*/
+
+.content--vi{
+  width: 50%;
+}
+
+.content--vi img{
+  width: 100%;
+  height: auto;
+}
+
+.content--area__green::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #3e6262;
+}
+
+.card--head__green{
+  color: #3e6262;
+}
+
+/*----top-about終わり----*/
+
+
+/*----top-future始まり----*/
+
+.card--head__navy{
+  color: #2f3e53;
+}
+
+.rm--btn-mt2{
+  margin-top: 20px
+}
+
+.content__rig .content--vi{
+  order: 2;
+}
+
+.content__rig .content--area{
+  order: 1;
+}
+
+.content__rig .card{
+   margin: 3.5vw 2.9vw 0 10%;
+  padding: 10px 0 12.5px;
+}
+
+.content__rig .card--text{
+  padding-left: 2%;
+  padding-right: 0;
+}
+
+.content--area__navy::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #2f3e53;
+}
+
+/*----top-future終わり----*/
+
+
+/*----top-product始まり----*/
+
+.pu-base{
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;/*子要素のマージンを含むhttp://seto-abe.hatenablog.com/entry/2016/12/06/153305*/
+}
+
+.pu-base::before{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 35%;
+  height: 100%;
+  background-color: #5b623e;
+}
+
+.pu-content{
+  width: 86%;
+  background-color: #fff;
+  margin: 35px 0;
+  position: relative;
+}
+
+.pu-card{
+  width: 24.54%;
+  text-align: center;
+}
+
+.pu-card .card--head{
+  color: #5b623e;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+.pu-card p.card--season{
+  color: #5b623e;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.pu-card p:last-child{
+  margin-bottom: 30px;
+}
+
+
+.mulch{
+  width: 75.46%;
+  padding: 30px 0 30px 4.66%;
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 45px 20px;
+  grid-template-columns: repeat(auto-fit,minmax(187px,1fr));
+}
+
+.mulch-card img{
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.mulch-card--head{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.mulch-card .price{
+  font-size:  1.2rem;
+  text-align: center;
+  color: #ff0000;
+  margin: 15px auto 20px;
+}
+
+.se--btn{
+  font-size: 1.275rem;
+  font-weight: 600;
+  width: 100px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  line-height: 21px;
+  text-align: center;
+  margin: auto;
+}
+
+.se--btn a{
+  display: block;
+  color: #141414;
+}
+
+.fa-angle-right{
+  padding-left: 4px;
+}
+
+/*----top-product終わり----*/
+
+
+
+/*----puroduct----*/
+
+#puroduct .wrapper{
+  position: relative;
+}
+#puroduct .wrapper::before{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30vw;
+  background: url(../image/puroduct-top.jpg) center / cover no-repeat;
+  font-size: 4.8rem;
+}
+
+
+
+#puroduct .wrapper h2{
+  padding: 85px 0 76px 0;
+  font-size: 4.8rem;
+  text-align: center;
+  color: #5b623e;
+}
+
+.pu-contener{
+  position: relative;
+}
+
+.pu-mein{
+  background-color: #fff;
+  width: 1000px;
+  margin: 0 auto;
+  height: 500px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
