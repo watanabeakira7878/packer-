@@ -715,6 +715,7 @@ header{
 .main-list ul li{
   width: calc(100% / 4);
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .main-list ul li:last-child{
